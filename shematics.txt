@@ -1,0 +1,69 @@
+The Plan How It Should Work
+___________________________
+
+
++-------------------------------------------------+
+|               AlfaCadabra GUI (PyQt)            |
+|             (Anweisungen & Ergebnisse)          |
++-------------------------------------------------+
+       |                                 ^
+       | Befehle senden                  | Ergebnisse/Status empfangen
+       v                                 |
++-------------------------------------------------+
+|         Core Engine (Python)                    |
+|  (Coordinaton, keeping things together)         |
++-------------------------------------------------+
+       |                                 ^
+       | calls                           | output parsing
+       v                                 |
++-------------------------------------------------+
+|        Modul 1: WLAN-Scan (airodump-ng)         |
+|        Modul 2: Deauth-Angriff (aireplay-ng)    |
+|        Modul 3: Evil Twin (hostapd, dnsmasq, bettercap)|
+|        Modul 4: WPA-Cracking (aircrack-ng)      |
+|        ...other more modules...                 |
++-------------------------------------------------+
+       |                                 ^
+       | connection to drivers           | roughdata from drivers
+       v                                 |
++-------------------------------------------------+
+| WLAN-Adapter (AWUS036ACH, AWUS036AXM)           |
+| (yr hardware, sending and/or receiving packets) |
++-------------------------------------------------+
+
+
+
+FileStructure
+_____________
+
+
+AlfaCadabra_Framework/
+├── main.py                   # Das Hauptskript, das die GUI startet und alles koordiniert.
+├── README.md                 # Eine Datei mit Projektbeschreibung, Installationshinweisen, etc.
+├── requirements.txt          # Liste der benötigten Python-Bibliotheken (z.B. PyQt5, ReportLab).
+├── core/
+│   ├── BaseModule.py         # Die Basisklasse für alle Module.
+│   └── __init__.py           # Macht 'core' zu einem Python-Paket. (Wichtig für Importe)
+├── modules/
+│   ├── AlfaAdapterManager.py # Modul zur Adapterverwaltung (Monitor-Modus, MAC-Wechsel).
+│   ├── ScanModule.py         # Modul zum Scannen von APs und Clients (airodump-ng).
+│   ├── DeauthModule.py       # Modul für Deauthentication-Angriffe (aireplay-ng).
+│   ├── EvilTwinModule.py     # Modul für Evil Twin und Captive Portal Angriffe (hostapd, dnsmasq, bettercap).
+│   ├── CrackingModule.py     # Modul zum Knacken von WPA/WPA2-Handshakes (aircrack-ng).
+│   ├── ReportGenerator.py    # Modul zur PDF-Berichterstellung (ReportLab).
+│   └── __init__.py           # Macht 'modules' zu einem Python-Paket. (Wichtig für Importe)
+├── assets/                   # Optional: Für Bilder, Icons oder HTML-Templates für den Evil Twin.
+│   ├── logo.png              # Ein Platzhalter für dein Projekt-Logo.
+│   └── captive_portal.html   # Beispiel-HTML für eine Captive Portal Seite (für Evil Twin).
+├── wordlists/                # Optional: Ein Ordner für Beispiel-Wordlists.
+│   └── default_wordlist.txt  # Eine kleine Beispiel-Wordlist.
+└── reports/                  # Optional: Hier werden die generierten PDF-Reports gespeichert.
+    └── pentest_report_2025-05-22.pdf # Beispiel für einen generierten Report.
+
+
+
+
+
+
+
+

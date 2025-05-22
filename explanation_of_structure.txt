@@ -1,0 +1,23 @@
+Erklärung der Struktur:
+
+    AlfaCadabra_Framework/ (Hauptverzeichnis)
+        main.py: Dies ist der Startpunkt deines gesamten Programms. Hier wird die PyQt-GUI initialisiert und von hier aus werden die verschiedenen Module aufgerufen. Stell dir das vor wie die "Schaltzentrale" des Frameworks.
+        README.md: Eine Textdatei, die grundlegende Informationen über dein Projekt enthält: Was es tut, wie man es installiert, wie man es benutzt und wichtige Hinweise zur ethischen Nutzung. Sehr wichtig für GitHub!
+        requirements.txt: Eine einfache Textdatei, die alle externen Python-Bibliotheken auflistet, die dein Projekt benötigt (z.B. PyQt5, reportlab). Damit kann jeder, der dein Projekt nutzt, diese Abhängigkeiten einfach installieren (pip install -r requirements.txt).
+
+    core/ (Kernkomponenten)
+        BaseModule.py: Diese Datei enthält die BaseModule-Klasse. Sie ist die Basisklasse, von der alle anderen spezifischen Module (ScanModule, DeauthModule etc.) erben. Sie enthält gemeinsame Funktionen wie das Starten und Stoppen von Unterprozessen, das Sammeln von Ausgaben und die Statusverwaltung. Das ist sehr wichtig für die Konsistenz.
+        __init__.py: Diese leere Datei ist wichtig! Sie kennzeichnet den core-Ordner als ein Python-Paket. Das erlaubt dir, die BaseModule-Klasse einfach in anderen Skripten zu importieren, z.B. from core.BaseModule import BaseModule.
+
+    modules/ (Spezifische Funktionalitäten)
+        Hier liegen alle Skripte, die eine spezifische Funktion deines Frameworks implementieren (Scan, Deauth, Evil Twin, Cracking, Report). Jedes Skript implementiert die Logik für sein spezielles Kali-Tool.
+        __init__.py: Auch hier ist diese leere Datei notwendig, um modules als Python-Paket zu kennzeichnen, damit du die einzelnen Module leicht in main.py oder anderen Modulen importieren kannst (z.B. from modules.ScanModule import ScanModule).
+
+    assets/ (Ressourcen)
+        Ein optionaler Ordner für alle nicht-Code-Dateien, die dein Framework benötigt, wie z.B. Bilder (Icons für die GUI, Logo), HTML-Templates für das Captive Portal des Evil Twin, etc.
+
+    wordlists/ (Optional für Cracking)
+        Ein praktischer Ort, um beispielhafte oder kleine Wordlists zu speichern, die direkt mit dem CrackingModule verwendet werden können.
+
+    reports/ (Ausgabeordner)
+        Hier werden die vom ReportGenerator erstellten PDF-Berichte gespeichert.

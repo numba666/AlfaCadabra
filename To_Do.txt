@@ -1,0 +1,34 @@
+"Footprint-Analyse" (Basierend auf Probe Requests)
+
+"Gatekeeper"-Demonstration (Basierend auf Evil Twin / DNS-Spoofing)
+
+
+
+"Alertivity" im digitalen Zeitalter: Mehr als nur Cybersecurity
+
+Dein Begriff "Alertivity" ist sehr treffend, denn es geht nicht nur um technische Abwehr, sondern um ein geschärftes Bewusstsein. Hier ein paar Ideen, die über das WLAN-Pentesting hinausgehen und sich im Framework oder den Begleitmaterialien widerspiegeln könnten:
+
+    Der "Gläserne Mensch" und digitale Schatten:
+        Wir hinterlassen ständig digitale Spuren – beim Surfen, Standortdienste, Smart-Home-Geräte. Das WLAN-Scanning mit AlfaCadabra kann exemplarisch zeigen, wie selbst passive Aktionen (ein Smartphone, das nach bekannten WLANs sucht) Daten preisgeben.
+        Idee für das Framework: Eine "Footprint-Analyse"-Funktion, die (simuliert oder real, mit Zustimmung) zeigt, welche Informationen ein Gerät über sich preisgibt, ohne aktiv zu interagieren. Das könnte die Basis für eine Diskussion über "digitale Selbstverteidigung" sein.
+        Philosophie: Wie können wir in einer Welt, die immer mehr vernetzt ist, unsere Privatsphäre schützen, wenn selbst unsere Geräte ständig "plappern"? Es geht darum, bewusst zu entscheiden, was wir preisgeben wollen.
+
+    Der "Algorithmus als Gatekeeper":
+        Immer mehr unserer Informationen, Nachrichten und sogar Meinungsbilder werden durch Algorithmen gefiltert. Stichwort "Filterblase" und "Echokammer". Das hat zwar nicht direkt mit WLAN zu tun, aber mit der digitalen Interaktion.
+        Idee für das Framework (eher im pädagogischen Kontext): Ein Abschnitt im Report oder in Begleitmaterialien, der die Funktionsweise von Algorithmen erklärt und wie sie unsere Wahrnehmung beeinflussen können. Vielleicht sogar ein kleines Experiment, das simuliert, wie eine Suche oder ein Social-Media-Feed personalisiert wird.
+        Philosophie: Wir müssen lernen, Algorithmen nicht blind zu vertrauen, sondern ihre Mechanismen zu hinterfragen und bewusst vielfältige Informationsquellen zu suchen. Es geht um digitale Mündigkeit.
+
+    Die "Demokratisierung des Wissens" vs. "Informationsflut":
+        Das Internet hat uns Zugang zu unendlich viel Wissen verschafft – eine revolutionäre Chance. Gleichzeitig führt es zu einer Überforderung und der Schwierigkeit, Wahrheit von Fälschung zu unterscheiden (Fake News, Deepfakes).
+        Idee für das Framework: Wenn du etwa das Evil Twin Modul zeigst, könnte dies als Beispiel dienen, wie leicht Informationen manipuliert oder gefälscht werden können, sobald man die Kontrolle über den Datenfluss hat. Es könnte eine Brücke schlagen zur kritischen Medienkompetenz.
+        Philosophie: Wie navigieren wir durch die Informationsflut, ohne in Skepsis oder Zynismus zu versinken? Der Fokus liegt auf der kritischen Bewertung von Quellen und der Stärkung der eigenen Urteilsfähigkeit.
+
+    Digital Wellbeing und "Offline-Kompetenz":
+        Die ständige Verfügbarkeit und Vernetzung kann zu Stress, Burnout und Abhängigkeiten führen. Es geht nicht nur um Cyberkriminalität, sondern um die psychische Gesundheit im digitalen Raum.
+        Idee für das Framework (indirekt): Der Akt des "Abschirmens" oder "Netzwerke deauth'en" könnte metaphorisch genutzt werden, um die Wichtigkeit von "digitalen Auszeiten" zu betonen. Der Report könnte Empfehlungen für den bewussten Umgang mit digitaler Technologie enthalten.
+        Philosophie: Wie finden wir ein gesundes Gleichgewicht zwischen digitaler Vernetzung und physischem Wohlbefinden? Es geht um die Rückeroberung von Aufmerksamkeit und Zeit.
+
+    "Digital Ethics by Design":
+        Statt ethische Fragen erst im Nachhinein zu stellen, sollten wir sie bereits beim Design von Technologien berücksichtigen. Dein Ansatz mit AlfaCadabra ist ein hervorragendes Beispiel dafür, da du von Anfang an die Aufklärung im Blick hast.
+        Idee für das Framework: Das Framework selbst könnte ein Leuchtturmprojekt für "Ethik in der Softwareentwicklung" sein. Jedes Modul demonstriert nicht nur eine technische Möglichkeit, sondern auch die ethische Verantwortung, die damit einhergeht.
+        Philosophie: Wir als Entwickler tragen eine Verantwortung für die Werkzeuge, die wir schaffen. Bildung ist der Schlüssel, um diese Verantwortung zu teilen und Nutzer zu befähigen.
